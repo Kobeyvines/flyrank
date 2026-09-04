@@ -1,0 +1,224 @@
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --text: #1A1A1A;
+    --bg: #FAFAFA;
+    --accent: #2D5FE0;
+    --line: #E4E7EC;
+  }
+  * { box-sizing: border-box; }
+  .kit {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    padding: 64px 48px 48px;
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  .kit h1, .kit h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    margin: 0;
+  }
+  .mark-line {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 56px;
+  }
+  .mark {
+    width: 52px;
+    height: 52px;
+    background: var(--accent);
+    color: var(--bg);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .kit-title {
+    font-size: 15px;
+    color: var(--text);
+    opacity: 0.55;
+    font-family: 'Inter', sans-serif;
+  }
+  section {
+    padding: 32px 0;
+    border-top: 1px solid var(--line);
+  }
+  section:first-of-type { border-top: none; padding-top: 0; }
+  .section-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    opacity: 0.55;
+    margin-bottom: 16px;
+  }
+  .specimen-name { font-size: 30px; margin-bottom: 4px; }
+  .specimen-role { font-size: 14px; opacity: 0.6; margin-bottom: 20px; }
+  .specimen-heading {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .specimen-body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    max-width: 58ch;
+    margin-bottom: 0;
+  }
+  .swatch-row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .swatch {
+    width: 132px;
+  }
+  .swatch-color {
+    width: 132px;
+    height: 88px;
+    border: 1px solid var(--line);
+  }
+  .swatch-label {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  .swatch-hex {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13px;
+    opacity: 0.6;
+  }
+  .mark-showcase {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .mark-large {
+    width: 96px;
+    height: 96px;
+    background: var(--accent);
+    color: var(--bg);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .mark-small {
+    width: 32px;
+    height: 32px;
+    background: var(--accent);
+    color: var(--bg);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .mark-context {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 12px;
+  }
+  .style-note {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    background: transparent;
+    border-left: 2px solid var(--accent);
+    padding-left: 20px;
+  }
+  .copy-hint {
+    font-size: 12px;
+    opacity: 0.5;
+    margin-top: 12px;
+    font-family: 'Inter', sans-serif;
+  }
+</style>
+
+<div class="kit">
+
+  <div class="mark-line">
+    <div class="mark">KV</div>
+    <div class="kit-title">Identity kit — one page, four decisions</div>
+  </div>
+
+  <section>
+    <div class="section-label">Type</div>
+    <div class="specimen-name" style="font-family:'IBM Plex Sans',sans-serif;">Kobe Vines</div>
+    <div class="specimen-role">IBM Plex Sans, 600 — headings, name, section titles</div>
+    <div class="specimen-heading">Precision degradation, measured not assumed</div>
+    <div class="specimen-body">
+      Inter, 400 — body copy, case study prose, everything a visitor actually reads.
+      Grounded, observational data analysis, translated into decisions a team can act on
+      without overclaiming what the data can prove.
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Palette</div>
+    <div class="swatch-row">
+      <div class="swatch">
+        <div class="swatch-color" style="background:#1A1A1A;"></div>
+        <div class="swatch-label">Text</div>
+        <div class="swatch-hex">#1A1A1A</div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#FAFAFA; border:1px solid #E4E7EC;"></div>
+        <div class="swatch-label">Background</div>
+        <div class="swatch-hex">#FAFAFA</div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#2D5FE0;"></div>
+        <div class="swatch-label">Accent — links, CTAs</div>
+        <div class="swatch-hex">#2D5FE0</div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background:#E4E7EC;"></div>
+        <div class="swatch-label">Line / divider</div>
+        <div class="swatch-hex">#E4E7EC</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Mark</div>
+    <div class="mark-showcase">
+      <div class="mark-large">KV</div>
+      <div>
+        <div class="mark-context">
+          <div class="mark-small">KV</div>
+          <span>at favicon size, 32px — still reads clean</span>
+        </div>
+        <div class="mark-context">
+          <span style="font-family:'IBM Plex Sans',sans-serif; font-weight:700; font-size:15px; color:#1A1A1A;">Kobe Vines</span>
+          <span>as a wordmark alternative, no mark needed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-label">Style note</div>
+    <div class="style-note">
+      IBM Plex Sans (600) for headings and the KV mark, Inter (400) for body — text #1A1A1A on
+      background #FAFAFA, one accent #2D5FE0 for links and CTAs only.<br>
+      Calm and audit-grade: the work is the loudest thing on the page, never the frame around it.
+    </div>
+    <div class="copy-hint">Paste the two lines above into your Claude Project's custom instructions.</div>
+  </section>
+
+</div>
